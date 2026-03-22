@@ -1,9 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Text style={styles.texto}>Bem-vindo ao app!</Text>
+
+      <Image
+        source={require('../assets/logo.png')}
+        style={styles.logo}
+      />
+      <Button title="Itens Encontrados" onPress={() => {}} />
+      <View style={{height: 10}} />
+      <Button title="Cadastrar Item" onPress={() => {}} />
     </View>
   );
 }
@@ -18,5 +25,10 @@ const styles = StyleSheet.create({
   texto: {
     color: '#fff',
     fontSize: 20,
+  },
+  logo: {
+    width: 250,
+    height: 250,
+    marginBottom: 20,
   },
 });
