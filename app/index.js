@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Button } from 'react-native';
+import { View, Text, StyleSheet, Image, Button, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function Home() {
@@ -11,16 +11,25 @@ export default function Home() {
         source={require('../assets/logo.png')}
         style={styles.logo}
       />
-      <Button title="Itens Encontrados"
-       onPress={() => router.push('/itens-encontrados')} 
-      />
-
-      <View style={{height: 10}} />
-
-      <Button title="Cadastrar Item" 
-      onPress={() => router.push('/registrar')} 
-      />
       
+      <TouchableOpacity
+        style={styles.button}
+        activeOpacity={0.7}
+        onPress={() => router.push('/itens-encontrados')}
+      >
+        <Text style={styles.buttonText}>Itens Encontrados</Text>
+      </TouchableOpacity>
+
+      <View style={{height: 20}} />
+
+      <TouchableOpacity
+        style={styles.button}
+        activeOpacity={0.7}
+        onPress={() => router.push('/registrar')}
+      >
+        <Text style={styles.buttonText}>Cadastrar Item Perdido</Text>
+      </TouchableOpacity>
+
     </View>
   );
 }
@@ -32,13 +41,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  texto: {
-    color: '#fff',
-    fontSize: 20,
-  },
   logo: {
     width: 250,
     height: 250,
     marginBottom: 20,
+  },
+  button: {
+    backgroundColor: '#FFFFFF',
+    paddingVertical: 15,
+    paddingHorizontal: 40,
+    borderRadius: 25,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: '#000000',
+    fontSize: 18,
+    fontWeight: 'bold'
   },
 });
