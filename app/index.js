@@ -15,7 +15,7 @@ export default function Home() {
       <TouchableOpacity
         style={styles.button}
         activeOpacity={0.7}
-        onPress={() => router.push('/itens-encontrados')}
+        onPress={() => router.push('/itens_encontrados')}
       >
         <Text style={styles.buttonText}>Itens Encontrados</Text>
       </TouchableOpacity>
