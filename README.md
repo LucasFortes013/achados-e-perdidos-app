@@ -1,7 +1,7 @@
 *Integrantes do grupo*
-Lucas Franco de Godoy Fortes
-Rafael Silva Oliveira Nascimento
-Pedro Noronha dos Santos
+- Lucas Franco de Godoy Fortes
+- Rafael Silva Oliveira Nascimento
+- Pedro Noronha dos Santos
 
 *Achados e Perdidos App*
 Um aplicativo mobile desenvolvido em React Native com o objetivo de facilitar o registro e a busca de itens perdidos dentro da faculdade.
