@@ -34,13 +34,13 @@ Pré-requisitos:
 *Passo a Passo*
 1. Abra o terminal no VS Code
 2. Clone o repositório
-  git clone https://github.com/LucasFortes013/fiap-cpad-cp1-achados-e-perdidos-app
+  - git clone https://github.com/LucasFortes013/fiap-cpad-cp1-achados-e-perdidos-app
 3. Acesse a pasta do projeto
-   cd achados-e-perdidos-app
+  - cd achados-e-perdidos-app
 4. Instale as dependências
-   npm install
+  - npm install
 5. Inicie o projeto
-   npx expo start
+  - npx expo start
 6. Execute no celular
    - Abra o Expo Go
    - Escaneie o QR Code exibido no terminal
